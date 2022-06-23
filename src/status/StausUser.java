@@ -7,9 +7,9 @@ package status;
 
 /**
  * MidTerm-Exam
- * @author srinivsi
+ * @author Gopika Kalathiya
  */
-public class StausUser 
+/*public class StausUser 
 {
    public void statusDetail(String code)
 {
@@ -31,4 +31,18 @@ switch(code.toUpperCase())
         }
 }
  
+}*/
+
+
+public enum StausUser{
+    ZERO("REJECTED"),ONE("PENDING"),TWO("PROCESSING"),THREE("APPROVED");
+    
+    private final String st;
+    
+    StausUser(String st){
+        this.st=st;
+    }
+    public String getSt(){
+        return st;
+    }
 }
